@@ -7,6 +7,7 @@ interface SiteConfig {
 	links: {
 		twitter: string
 		github: string
+		mastodon: string
 	}
 }
 
@@ -22,5 +23,6 @@ export const siteConfig: SiteConfig = {
 	links: {
 		twitter: "https://twitter.com/Exerra",
 		github: "https://github.com/Exerra/chromeos-download",
+		mastodon: "https://mastodon.world/@exerra"
 	},
 }

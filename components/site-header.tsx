@@ -5,6 +5,9 @@ import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { buttonVariants } from "@/components/ui/button"
+import { faChrome, faMastodon } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as React from "react";
 
 export function SiteHeader() {
 	return (
@@ -44,6 +47,22 @@ export function SiteHeader() {
 							>
 								<Icons.twitter className="h-5 w-5 fill-current"/>
 								<span className="sr-only">Twitter</span>
+							</div>
+						</Link>
+						<Link
+							href={siteConfig.links.mastodon}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<div
+								className={buttonVariants( {
+									size: "sm",
+									variant: "ghost",
+									className: "text-slate-700 dark:text-slate-400",
+								} )}
+							>
+								<FontAwesomeIcon icon={faMastodon} className="h-5 w-5 fill-current" />
+								<span className="sr-only">Mastodon</span>
 							</div>
 						</Link>
 						<ThemeToggle/>
