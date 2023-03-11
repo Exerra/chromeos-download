@@ -1,29 +1,26 @@
 import { NavItem } from "@/types/nav"
 
 interface SiteConfig {
-  name: string
-  description: string
-  mainNav: NavItem[]
-  links: {
-    twitter: string
-    github: string
-    docs: string
-  }
+	name: string
+	description: string
+	mainNav: NavItem[]
+	links: {
+		twitter: string
+		github: string
+	}
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Next.js",
-  description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
-  mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
-  ],
-  links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
-  },
+	name: "ChromeOS releases",
+	description: "Download the latest ChromeOS BIN files without using the recovery utility.",
+	mainNav: [
+		{
+			title: "Home",
+			href: "/",
+		},
+	],
+	links: {
+		twitter: "https://twitter.com/Exerra",
+		github: "https://github.com/Exerra/chromeos-download",
+	},
 }
