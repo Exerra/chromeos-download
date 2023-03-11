@@ -11,7 +11,7 @@ export function Layout( { children }: LayoutProps ) {
 			<SiteHeader/>
 			<main>{children}</main>
 			<footer className={"p-10 text-center"}>
-				Made by <a href={"https://exerra.xyz"} className={"font-bold"} target={"_blank"} rel={"noreferrer"}>Exerra <img className={"inline-flex h-6 w-6"} src={"https://cdn.exerra.xyz/png/pfp.png"} /></a><br />
+				Made by <a href={"https://exerra.xyz"} className={"font-bold"} target={"_blank"} rel={"noreferrer"}>Exerra <img alt={"Exerra's profile picture"} height={24} width={24} className={"inline-flex h-6 w-6"} src={"https://cdn.exerra.xyz/png/pfp.png"} /></a><br />
 				ChromeOS is a trademark owned by Google.
 			</footer>
 		</>
