@@ -55,7 +55,7 @@ export default function IndexPage( { flex }: InferGetStaticPropsType<typeof getS
 						<div key={v.channel} className={"flex w-full shrink-0 grow flex-col justify-between rounded-xl border-2 border-slate-200 p-5 dark:border-slate-800 lg:basis-1/3 xl:basis-1/4"}>
 							<div className={"mb-10 p-0"}>
 								<h2 className={"mb-3 text-2xl font-bold leading-tight tracking-tighter"}>
-									{v.name} - {v.channel === "LTC" ? v.channel : v.channel.toLowerCase().charAt(0).toUpperCase() + v.channel.toLowerCase().slice(1)}
+									{v.name} - {v.channel.startsWith("LT") ? v.channel : v.channel.toLowerCase().charAt(0).toUpperCase() + v.channel.toLowerCase().slice(1)}
 								</h2>
 
 								<Accordion type="single" collapsible className={""}>
